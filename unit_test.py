@@ -1,6 +1,6 @@
 import unittest
 
-import app
+from app import app
 
 class TestPlus(unittest.TestCase):
     def test_true_when_x_is_17(self):
