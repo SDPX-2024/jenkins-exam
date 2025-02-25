@@ -15,7 +15,7 @@ pipeline {
         stage("Install & Run Unit Tests") {
             steps {
                 sh "pip install -r requirements.txt"
-                sh "python3 unit_test.py -v &> /home/test/exam/unit_results/unit_test.log"
+                sh "python3 -m unittest unit_test.py -v &> /home/test/exam/unit_results/unit_test.log"
             }
         }
 
