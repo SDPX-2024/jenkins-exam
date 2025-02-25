@@ -16,6 +16,5 @@ class TestPlus(unittest.TestCase):
         self.assertEqual(statuscode, 200)
         self.assertEqual(response.json, {"result": True})
 
-
 if __name__ == '__main__':
     unittest.main()
