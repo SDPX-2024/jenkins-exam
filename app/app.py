@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/getcode', methods=['GET'])
 def getcode():
     with app.app_context():
-        return jsonify({"result": "#7308 is my code"}), 200
+        return jsonify({"result": "#7309 is my code"}), 200
 
 @app.route('/is_prime/<num>', methods=['GET'])
 def is_prime(num):
